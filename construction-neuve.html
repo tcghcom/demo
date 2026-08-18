@@ -5,13 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Construction neuve &amp; agrandissement | Tirana Construction</title>
 <meta name="description" content="Un agrandissement sur mesure ou une construction complète de A à Z.">
-<link rel="icon" href="tc.png">
+<link rel="canonical" href="https://demo.tirana-construction.com/construction-neuve.html">
+<link rel="alternate" hreflang="fr-CA" href="https://demo.tirana-construction.com/construction-neuve.html">
+<link rel="alternate" hreflang="en-CA" href="https://demo.tirana-construction.com/en/new-construction.html">
+<link rel="alternate" hreflang="x-default" href="https://demo.tirana-construction.com/construction-neuve.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="og:title" content="Construction neuve &amp; agrandissement | Tirana Construction">
+<meta property="og:description" content="Un agrandissement sur mesure ou une construction complète de A à Z.">
+<meta property="og:url" content="https://demo.tirana-construction.com/construction-neuve.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&h=630&q=75">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&h=800&q=75">
 </head>
 <body>
+<a href="#contenu" class="skip-link">Aller au contenu</a>
 
 <div class="topbar">
   <div class="container">
@@ -34,24 +48,26 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand"><img src="tc.png" alt="Tirana Construction"> Tirana Construction</a>
+    <a href="index.html" class="brand"><img src="tc-logo.png" alt=""> Tirana Construction</a>
     <nav class="nav">
-      <ul class="nav__links">
+      <ul class="nav__links" id="nav-links">
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html" class="is-current">Services</a></li>
+        <li><a href="services.html" class="is-current" aria-current="page">Services</a></li>
         <li><a href="about.html">À propos</a></li>
         <li><a href="gallery.html">Réalisations</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav__cta">
         <a href="contact.html" class="btn btn--primary btn--sm"><span class="btn-label-full">Soumission</span> gratuite</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
       </div>
     </nav>
   </div>
 </header>
 
-<section class="hero hero--page" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&h=800&q=75')">
+<main id="contenu">
+
+<section class="hero hero--page" style="--hero-bg:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&h=800&q=75')">
   <div class="container">
     <div class="hero__content">
       <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><a href="services.html">Services</a><span>/</span><span>Construction neuve &amp; agrandissement</span></div>
@@ -129,11 +145,13 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-brand"><img src="tc.png" alt="Tirana Construction"><span>Tirana Construction</span></div>
+        <div class="footer-brand"><img src="tc-logo.png" alt=""><span>Tirana Construction</span></div>
         <p>Entrepreneur général en construction et rénovation résidentielle, fier de bâtir des espaces de vie durables sur la Rive-Sud de Montréal.</p>
         <div class="footer-social">
           <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.5 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.19 22 17.06 22 12.06Z"/></svg></a>

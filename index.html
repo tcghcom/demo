@@ -5,13 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tirana Construction | Entrepreneur général en rénovation - Rive-Sud de Montréal</title>
 <meta name="description" content="Tirana Construction est un entrepreneur général spécialisé en rénovation résidentielle et construction neuve sur la Rive-Sud de Montréal. Soumission gratuite.">
-<link rel="icon" href="tc.png">
+<link rel="canonical" href="https://demo.tirana-construction.com/">
+<link rel="alternate" hreflang="fr-CA" href="https://demo.tirana-construction.com/">
+<link rel="alternate" hreflang="en-CA" href="https://demo.tirana-construction.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://demo.tirana-construction.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="og:title" content="Tirana Construction | Entrepreneur général en rénovation">
+<meta property="og:description" content="Rénovation résidentielle et construction neuve sur la Rive-Sud de Montréal. Soumission gratuite.">
+<meta property="og:url" content="https://demo.tirana-construction.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&h=630&q=75">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&h=1080&q=75">
 </head>
 <body>
+<a href="#contenu" class="skip-link">Aller au contenu</a>
 
 <div class="topbar">
   <div class="container">
@@ -34,10 +48,10 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand"><img src="tc.png" alt="Tirana Construction"> Tirana Construction</a>
+    <a href="index.html" class="brand"><img src="tc-logo.png" alt=""> Tirana Construction</a>
     <nav class="nav">
-      <ul class="nav__links">
-        <li><a href="index.html" class="is-current">Accueil</a></li>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="is-current" aria-current="page">Accueil</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">À propos</a></li>
         <li><a href="gallery.html">Réalisations</a></li>
@@ -45,13 +59,15 @@
       </ul>
       <div class="nav__cta">
         <a href="contact.html" class="btn btn--primary btn--sm"><span class="btn-label-full">Soumission</span> gratuite</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
       </div>
     </nav>
   </div>
 </header>
 
-<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&h=1080&q=75')">
+<main id="contenu">
+
+<section class="hero" style="--hero-bg:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&h=1080&q=75');--hero-bg-sm:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&h=900&q=70')">
   <div class="container">
     <div class="hero__content">
       <p class="eyebrow">Entrepreneur général — Rive-Sud de Montréal</p>
@@ -199,10 +215,10 @@
 <section class="section">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat"><h3 data-count="12" data-suffix="+">0+</h3><p>Années d'expérience</p></div>
-      <div class="stat"><h3 data-count="240" data-suffix="+">0+</h3><p>Projets réalisés</p></div>
-      <div class="stat"><h3 data-count="98" data-suffix="%">0%</h3><p>Taux de satisfaction</p></div>
-      <div class="stat"><h3 data-count="6" data-suffix="">0</h3><p>Municipalités desservies</p></div>
+      <div class="stat"><span class="stat__value" data-count="12" data-suffix="+">12+</span><p>Années d'expérience</p></div>
+      <div class="stat"><span class="stat__value" data-count="240" data-suffix="+">240+</span><p>Projets réalisés</p></div>
+      <div class="stat"><span class="stat__value" data-count="98" data-suffix="%">98%</span><p>Taux de satisfaction</p></div>
+      <div class="stat"><span class="stat__value" data-count="6" data-suffix="">6</span><p>Municipalités desservies</p></div>
     </div>
   </div>
 </section>
@@ -246,11 +262,13 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <div class="footer-brand"><img src="tc.png" alt="Tirana Construction"><span>Tirana Construction</span></div>
+        <div class="footer-brand"><img src="tc-logo.png" alt=""><span>Tirana Construction</span></div>
         <p>Entrepreneur général en construction et rénovation résidentielle, fier de bâtir des espaces de vie durables sur la Rive-Sud de Montréal.</p>
         <div class="footer-social">
           <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.5 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.19 22 17.06 22 12.06Z"/></svg></a>
